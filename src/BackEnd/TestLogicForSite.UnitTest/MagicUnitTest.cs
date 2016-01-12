@@ -2,23 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Xunit;
 
-namespace TestLogicForSite
+namespace TestLogicForSite.UnitTest
 {
 	// This project can output the Class library as a NuGet Package.
 	// To enable this option, right-click on the project and select the Properties menu item. In the Build tab select "Produce outputs on build".
-	public class Magic
+	public class MagicUnitTest
 	{
+		private Magic Magic = new Magic();
 
-		public bool PositiveTest()
+		[Fact]
+		public void PositeveTest()
 		{
-			return true;
+			Assert.True(this.Magic.PositiveTest());
 		}
 
-		public bool NegativeTest()
+		[Fact]
+		public void NegativeTest()
 		{
-			return false;
+			Assert.True(this.Magic.NegativeTest());
 		}
-
 	}
 }
