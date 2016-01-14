@@ -15,13 +15,13 @@ namespace TestLogicForSite.UnitTest
 		[Fact]
 		public void PositeveTest()
 		{
-			Assert.True(this.Magic.PositiveTest());
+			Assert.True(this.Magic.Positive());
 		}
 
 		[Fact]
 		public void NegativeTest()
 		{
-			Assert.True(this.Magic.NegativeTest());
+			Assert.True(this.Magic.Negative());
 		}
 	}
 }

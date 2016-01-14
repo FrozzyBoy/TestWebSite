@@ -9,13 +9,12 @@ namespace TestLogicForSite
 	// To enable this option, right-click on the project and select the Properties menu item. In the Build tab select "Produce outputs on build".
 	public class Magic
 	{
-
-		public bool PositiveTest()
+		public bool Positive()
 		{
 			return true;
 		}
 
-		public bool NegativeTest()
+		public bool Negative()
 		{
 			return false;
 		}
