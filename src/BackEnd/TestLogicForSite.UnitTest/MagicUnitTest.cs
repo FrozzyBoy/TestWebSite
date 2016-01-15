@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
+using MathNet.Numerics.LinearAlgebra;
+using MathNet.Numerics.LinearAlgebra.Double;
 
 namespace TestLogicForSite.UnitTest
 {
@@ -21,7 +23,20 @@ namespace TestLogicForSite.UnitTest
 		[Fact]
 		public void NegativeTest()
 		{
-			Assert.True(this.Magic.Negative());
+			//Assert.True(this.Magic.Negative());
+		}
+
+		[Fact]
+		public void TestPackagesRestore()
+		{
+			Matrix<double> A = DenseMatrix.OfArray(new double[,] {
+		{1,1,1,1},
+		{1,2,3,4},
+		{4,3,2,1}});
+			Vector<double>[] nullspace = A.Kernel();
+
+			// verify: the following should be approximately (0,0,0)
+			Vector<double> result = (A * (2 * nullspace[0] - 3 * nullspace[1]));
 		}
 	}
 }
