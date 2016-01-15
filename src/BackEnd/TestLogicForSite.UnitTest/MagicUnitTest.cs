@@ -23,7 +23,7 @@ namespace TestLogicForSite.UnitTest
 		[Fact]
 		public void NegativeTest()
 		{
-			//Assert.True(this.Magic.Negative());
+			Assert.True(this.Magic.Negative());
 		}
 
 		[Fact]
