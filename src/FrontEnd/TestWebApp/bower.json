@@ -1,0 +1,14 @@
+{
+  "name": "TestWebApp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Artsiom Marozau"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/FrozzyBoy/TestWebSite",
+  "moduleType": [],
+  "dependencies": {
+    "angular": "~1.4.8"
+  }
+}
