@@ -1,5 +1,4 @@
 !lib/**
-!.nuget/**
 bower_components/
 **/FrontEnd/**/typings/
 
